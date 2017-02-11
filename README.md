@@ -2,11 +2,16 @@ Problem Definition
 ----------------------------------------
 The goal of this programming assignment is to enable the student to practice programming using functions and lists.
 Write a program that has either a two dimensional list or four separate parallel lists for each type of information to store employee information.
+
 The program will have four functions that do the following: A main() function that first reads a file of employee data (name, hours, pay rate for each employee per line) into list(s).
+
 Close the file after reading the into lists. You may use the split string function to break a line into name, hours, pay rate.
 The program then enters a loop that ends when 4 is selected by a user and that processes a menu of the following items: 1. Input employee’s information, 2. Compute pay for all employees, 3. Display payroll report and 4. Exit.
+
 When the user enters 1 the inputData() function is called passing the list(s) as parameter(s), 2 computePay() function is called, and 3 displayPay() function is called. When the user enters 4, the program should write the list(s) data to the file by overwriting, and display a message: “Thank you for using our payroll application”.
+
 An inputData() function has a loop. Inside the loop are statements to input employee name, hours worked and pay rate for one employee and save them in the list(s). The loop repeats to read multiple employee information until a user enters ‘n’ in response to the question, “Do you have more employees to enter? (y/n).” 
+
 A computePay() function to calculate the gross amount to be paid to each employee and save the amount in the list based on the formula: a) For the first 40 hours, the rate is the given rate; b) For hours over 40, the rate is 1.5 times the given rate. A displayPay() function loops through the two dimensional list (or parallel lists) to display a table.
 
 Analysis
